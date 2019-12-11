@@ -1,7 +1,7 @@
 # OpenFlightsAPI-SpringBoot-AOP
 SpringBoot application integrated with OpenFlights API and AOP implementation for REST API security
 # OpenFlights API Specification
-https://openflights.org/data.html
+
 
 # Requirement
 1. Use the Airline, Airport and Routes data from OpenFlights spec
