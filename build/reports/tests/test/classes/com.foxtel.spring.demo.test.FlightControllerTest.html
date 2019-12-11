@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - FlightControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>FlightControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.foxtel.spring.demo.test.html">com.foxtel.spring.demo.test</a> &gt; FlightControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.068s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getAllFlightBetweenAirports_EmptyResponse_Test</td>
+<td class="success">0.072s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllFlightBetweenAirports_Ok_Test</td>
+<td class="success">0.317s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllFlightsBetweenAirports_NotFound_Test</td>
+<td class="success">0.416s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllFlightsIn_EmptyResponse_Test</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllFlightsIn_Ok_Test</td>
+<td class="success">0.071s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllFlightsOut_EmptyResponse_Test</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllFlightsOut_Ok_Test</td>
+<td class="success">0.077s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:04:15.180 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.foxtel.spring.demo.test.FlightControllerTest]
+13:04:15.181 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.foxtel.spring.demo.test.FlightControllerTest]
+13:04:15.183 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.foxtel.spring.demo.test.FlightControllerTest]
+13:04:15.183 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.foxtel.spring.demo.test.FlightControllerTest]
+13:04:15.193 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@42c24a09 testClass = FlightControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@c92715c testClass = FlightControllerTest, locations = '{}', classes = '{class com.foxtel.spring.demo.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4f5aa956, [ImportsContextCustomizer@5a3dcc8b key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2b9aa4cb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40eca341, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@33762d36], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+13:04:15.197 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.foxtel.spring.demo.test.FlightControllerTest]
+13:04:15.198 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.foxtel.spring.demo.test.FlightControllerTest]
+13:04:15.239 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+LOGBACK: No context given for c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1186649042
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.1.RELEASE)
+
+2019-12-10 13:04:16.153  INFO 36616 --- [    Test worker] c.f.s.demo.test.FlightControllerTest     : Starting FlightControllerTest on LT470FD5 with PID 36616 (started by nagarajr in C:\VisualStudioCodeWorkspace\demo)
+2019-12-10 13:04:16.158 DEBUG 36616 --- [    Test worker] c.f.s.demo.test.FlightControllerTest     : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-10 13:04:16.163  INFO 36616 --- [    Test worker] c.f.s.demo.test.FlightControllerTest     : No active profile set, falling back to default profiles: default
+2019-12-10 13:04:19.612  INFO 36616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-10 13:04:19.617  INFO 36616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-10 13:04:19.681  INFO 36616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54ms. Found 0 repository interfaces.
+2019-12-10 13:04:19.711  INFO 36616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-10 13:04:19.714  INFO 36616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-10 13:04:19.753  INFO 36616 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2019-12-10 13:04:21.123  INFO 36616 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d4bc7b67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-10 13:04:21.303  INFO 36616 --- [    Test worker] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-12-10 13:04:21.380  INFO 36616 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-10 13:04:21.925  INFO 36616 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-10 13:04:22.321  INFO 36616 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-10 13:04:24.732  INFO 36616 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-10 13:04:25.003  INFO 36616 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-10 13:04:25.439  INFO 36616 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-10 13:04:25.828  INFO 36616 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-10 13:04:26.385  INFO 36616 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-10 13:04:26.400  INFO 36616 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-10 13:04:26.808  WARN 36616 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-10 13:04:28.998  INFO 36616 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/flights'
+2019-12-10 13:04:30.673  INFO 36616 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15e53c83, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d4c7ae, org.springframework.security.web.header.HeaderWriterFilter@180cd604, org.springframework.security.web.csrf.CsrfFilter@371c5f55, org.springframework.security.web.authentication.logout.LogoutFilter@5feb5554, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@303dfcbb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@221861a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79cfe748, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e8735e2, org.springframework.security.web.session.SessionManagementFilter@cf60123, org.springframework.security.web.access.ExceptionTranslationFilter@37b06ef3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68f216bc]
+2019-12-10 13:04:30.797  INFO 36616 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-10 13:04:31.541  INFO 36616 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-10 13:04:32.721  INFO 36616 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-12-10 13:04:32.722  INFO 36616 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-10 13:04:32.753  INFO 36616 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 30 ms
+2019-12-10 13:04:32.835  INFO 36616 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-10 13:04:32.923  INFO 36616 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-10 13:04:33.097  INFO 36616 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-10 13:04:33.410  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2019-12-10 13:04:33.419  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2019-12-10 13:04:33.422  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2019-12-10 13:04:33.426  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2019-12-10 13:04:33.430  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2019-12-10 13:04:33.433  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2019-12-10 13:04:33.436  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2019-12-10 13:04:33.439  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2019-12-10 13:04:33.441  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2019-12-10 13:04:33.446  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2019-12-10 13:04:33.449  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2019-12-10 13:04:33.452  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2019-12-10 13:04:33.458  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2019-12-10 13:04:33.464  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2019-12-10 13:04:33.467  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2019-12-10 13:04:33.470  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2019-12-10 13:04:33.473  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2019-12-10 13:04:33.476  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2019-12-10 13:04:33.480  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingPOST_1
+2019-12-10 13:04:33.482  INFO 36616 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2019-12-10 13:04:33.542  INFO 36616 --- [    Test worker] c.f.s.demo.test.FlightControllerTest     : Started FlightControllerTest in 18.284 seconds (JVM running for 22.497)
+2019-12-10 13:04:34.259  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 3393 to airport 3361
+2019-12-10 13:04:34.261 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.270 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights between 3393 and 3361
+2019-12-10 13:04:34.373 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.375  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST URI /flights/route/source/3393/dest/3361
+2019-12-10 13:04:34.375  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST method GET
+2019-12-10 13:04:34.376 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session ID 2
+2019-12-10 13:04:34.378 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474193
+2019-12-10 13:04:34.379 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session last accessed time 1575943474193
+2019-12-10 13:04:34.379 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474193
+2019-12-10 13:04:34.380 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context 
+2019-12-10 13:04:34.380 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context server info MockServletContext
+2019-12-10 13:04:34.381 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context timeout 0 minutes
+2019-12-10 13:04:34.382 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : Reuqest time out set at 2000 ms
+2019-12-10 13:04:34.382 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : StopWatch 'FlightControllerAspect$$EnhancerBySpringCGLIB$$4bfdbba3': running time = 148826400 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+148826400  100%  getFlightsFromAndToAirports
+
+2019-12-10 13:04:34.383 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : API Running time: 148
+2019-12-10 13:04:34.384  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : HTTP Status: 200
+2019-12-10 13:04:34.387  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 3393 to airport 3361
+2019-12-10 13:04:34.387 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.388 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights between 3393 and 3361
+2019-12-10 13:04:34.392 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.520  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights to 156695134-129a-4954-b18e-cb43a7343942
+2019-12-10 13:04:34.524 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.525 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights to 156695134-129a-4954-b18e-cb43a7343942
+2019-12-10 13:04:34.558 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.563  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST URI /flights/in/airport/156695134-129a-4954-b18e-cb43a7343942
+2019-12-10 13:04:34.565  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST method GET
+2019-12-10 13:04:34.566 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session ID 3
+2019-12-10 13:04:34.567 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474515
+2019-12-10 13:04:34.568 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session last accessed time 1575943474515
+2019-12-10 13:04:34.568 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474515
+2019-12-10 13:04:34.569 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context 
+2019-12-10 13:04:34.570 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context server info MockServletContext
+2019-12-10 13:04:34.570 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context timeout 0 minutes
+2019-12-10 13:04:34.571 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : Reuqest time out set at 2000 ms
+2019-12-10 13:04:34.571 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : StopWatch 'FlightControllerAspect$$EnhancerBySpringCGLIB$$4bfdbba3': running time = 51275600 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+051275600  100%  getAllFlightsIn
+
+2019-12-10 13:04:34.572 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : API Running time: 51
+2019-12-10 13:04:34.572  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : HTTP Status: 200
+2019-12-10 13:04:34.573  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights to 156695134-129a-4954-b18e-cb43a7343942
+2019-12-10 13:04:34.573 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.574 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights to 156695134-129a-4954-b18e-cb43a7343942
+2019-12-10 13:04:34.575 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.593  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 1d81a62ea-9325-44b7-b4cc-6c217fdf385a
+2019-12-10 13:04:34.593 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.594 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights from 1d81a62ea-9325-44b7-b4cc-6c217fdf385a
+2019-12-10 13:04:34.620 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.621  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST URI /flights/out/airport/1d81a62ea-9325-44b7-b4cc-6c217fdf385a
+2019-12-10 13:04:34.621  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST method GET
+2019-12-10 13:04:34.621 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session ID 4
+2019-12-10 13:04:34.621 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474591
+2019-12-10 13:04:34.621 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session last accessed time 1575943474591
+2019-12-10 13:04:34.622 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474591
+2019-12-10 13:04:34.622 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context 
+2019-12-10 13:04:34.622 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context server info MockServletContext
+2019-12-10 13:04:34.622 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context timeout 0 minutes
+2019-12-10 13:04:34.622 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : Reuqest time out set at 2000 ms
+2019-12-10 13:04:34.622 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : StopWatch 'FlightControllerAspect$$EnhancerBySpringCGLIB$$4bfdbba3': running time = 30043500 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+030043500  100%  getAllFlightsOut
+
+2019-12-10 13:04:34.623 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : API Running time: 30
+2019-12-10 13:04:34.623  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : HTTP Status: 200
+2019-12-10 13:04:34.623  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 1d81a62ea-9325-44b7-b4cc-6c217fdf385a
+2019-12-10 13:04:34.623 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.623 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights from 1d81a62ea-9325-44b7-b4cc-6c217fdf385a
+2019-12-10 13:04:34.624 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.634  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights to 2290
+2019-12-10 13:04:34.634 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.634 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights to 2290
+2019-12-10 13:04:34.665 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.665  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST URI /flights/in/airport/2290
+2019-12-10 13:04:34.665  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST method GET
+2019-12-10 13:04:34.666 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session ID 5
+2019-12-10 13:04:34.666 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474631
+2019-12-10 13:04:34.666 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session last accessed time 1575943474631
+2019-12-10 13:04:34.667 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474631
+2019-12-10 13:04:34.667 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context 
+2019-12-10 13:04:34.667 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context server info MockServletContext
+2019-12-10 13:04:34.668 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context timeout 0 minutes
+2019-12-10 13:04:34.668 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : Reuqest time out set at 2000 ms
+2019-12-10 13:04:34.669 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : StopWatch 'FlightControllerAspect$$EnhancerBySpringCGLIB$$4bfdbba3': running time = 35544400 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+035544400  100%  getAllFlightsIn
+
+2019-12-10 13:04:34.672 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : API Running time: 35
+2019-12-10 13:04:34.672  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : HTTP Status: 200
+2019-12-10 13:04:34.672  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights to 2290
+2019-12-10 13:04:34.673 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.674 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights to 2290
+2019-12-10 13:04:34.678 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.706  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 1 to airport 1
+2019-12-10 13:04:34.707 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.708 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights between 1 and 1
+2019-12-10 13:04:34.728 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.729  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST URI /flights/route/source/1/dest/1
+2019-12-10 13:04:34.729  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST method GET
+2019-12-10 13:04:34.730 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session ID 6
+2019-12-10 13:04:34.730 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474704
+2019-12-10 13:04:34.731 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session last accessed time 1575943474704
+2019-12-10 13:04:34.731 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474704
+2019-12-10 13:04:34.731 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context 
+2019-12-10 13:04:34.732 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context server info MockServletContext
+2019-12-10 13:04:34.732 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context timeout 0 minutes
+2019-12-10 13:04:34.733 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : Reuqest time out set at 2000 ms
+2019-12-10 13:04:34.738 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : StopWatch 'FlightControllerAspect$$EnhancerBySpringCGLIB$$4bfdbba3': running time = 29350300 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+029350300  100%  getFlightsFromAndToAirports
+
+2019-12-10 13:04:34.764 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : API Running time: 29
+2019-12-10 13:04:34.764  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : HTTP Status: 200
+2019-12-10 13:04:34.765  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 1 to airport 1
+2019-12-10 13:04:34.766 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.767 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights between 1 and 1
+2019-12-10 13:04:34.768 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.791  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 2290
+2019-12-10 13:04:34.791 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.792 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights from 2290
+2019-12-10 13:04:34.821 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+2019-12-10 13:04:34.821  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST URI /flights/out/airport/2290
+2019-12-10 13:04:34.822  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST method GET
+2019-12-10 13:04:34.822 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session ID 7
+2019-12-10 13:04:34.822 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474783
+2019-12-10 13:04:34.823 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session last accessed time 1575943474783
+2019-12-10 13:04:34.824 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session creation time 1575943474783
+2019-12-10 13:04:34.825 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context 
+2019-12-10 13:04:34.826 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context server info MockServletContext
+2019-12-10 13:04:34.829 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : REQUEST session servlet context timeout 0 minutes
+2019-12-10 13:04:34.829 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : Reuqest time out set at 2000 ms
+2019-12-10 13:04:34.831 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : StopWatch 'FlightControllerAspect$$EnhancerBySpringCGLIB$$4bfdbba3': running time = 39309700 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+039309700  100%  getAllFlightsOut
+
+2019-12-10 13:04:34.835 DEBUG 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : API Running time: 39
+2019-12-10 13:04:34.836  INFO 36616 --- [    Test worker] rAspect$$EnhancerBySpringCGLIB$$4bfdbba3 : HTTP Status: 200
+2019-12-10 13:04:34.836  INFO 36616 --- [    Test worker] c.f.s.demo.controller.FlightController   : API called for all flights from 2290
+2019-12-10 13:04:34.837 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service requested for flights data com.foxtel.spring.demo.service.FlightService
+2019-12-10 13:04:34.837 DEBUG 36616 --- [    Test worker] c.f.spring.demo.service.FlightService    : Service request for flights from 2290
+2019-12-10 13:04:34.840 DEBUG 36616 --- [    Test worker] eAspect$$EnhancerBySpringCGLIB$$1b5964d8 : Service successfully returned flights data 
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.6.4</a> at 10/12/2019 1:04:35 PM</p>
+</div>
+</div>
+</body>
+</html>
