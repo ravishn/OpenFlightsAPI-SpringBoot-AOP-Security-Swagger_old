@@ -1,7 +1,7 @@
 # OpenFlights API Specification
 https://openflights.org/data.html
 
-#Requirement
+#Requirement#
 1. Use the Airline, Airport and Routes data from OpenFlights spec
 2. Download and read the .dat files
 3. Define a schema and store the data into an in-memory database
@@ -20,7 +20,7 @@ Clone the OpenFlightsAPI-SpringBoot and open the project "com.foxtel.spring.demo
 3. Once the application is running, make a note of the port(should be 8080 by default)
 4. Run the endpoint /flights/in/{airportId} for flights flying in to the airport
 Ex. http://localhost:8080/flights/in/2290 should return the JSON response
-[
+`[
     {
         "airportName": "Memanbetsu Airport",
         "airlineId": "1",
@@ -49,11 +49,11 @@ Ex. http://localhost:8080/flights/in/2290 should return the JSON response
         "stops": null
     },
     ...
-]
+]`
 
 5. Run the endpoint /flights/out/{airportId} for flights flying out from the airport
 Ex. http://localhost:8080/flights/out/2290 should return the JSON response
-[
+`[
     {
         "airportName": "Memanbetsu Airport",
         "airlineId": "1",
@@ -82,11 +82,11 @@ Ex. http://localhost:8080/flights/out/2290 should return the JSON response
         "stops": null
     },
     ...
-]
+]`
 
 6. Run the endpoint /flights/route/{sourceAirportId}/{destinationAirportId} for flights flying between two airports
 Ex. http://localhost:8080/flights/route/3393/3361 should return the JSON response
-[
+`[
     {
         "airportName": null,
         "airlineId": null,
@@ -115,4 +115,4 @@ Ex. http://localhost:8080/flights/route/3393/3361 should return the JSON respons
         "stops": "0"
     },
     ...
-]
+]`
