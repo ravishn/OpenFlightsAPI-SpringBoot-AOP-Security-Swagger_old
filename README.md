@@ -20,7 +20,7 @@ Clone the OpenFlightsAPI-SpringBoot and open the project "com.foxtel.spring.demo
 1. Run Application.java - main Spring boot application
 2. data.sql should accept relative path of the .dat files, if the application fails to launch, try providing the absolute path of the .dat files. Some versions of H2 database have this bug
 3. Once the application is running, make a note of the port(should be 8080 by default)
-4. Run the endpoint /flights/in/{airportId} for flights flying in to the airport
+4. Run the endpoint /flights/in/{airportId} with username and password in the AUTH headers if using Postman, enter credentials in the popup if using browser for flights flying in to the airport
 Ex. http://localhost:8080/flights/in/2290 should return the JSON response
 ```
 [
@@ -55,7 +55,7 @@ Ex. http://localhost:8080/flights/in/2290 should return the JSON response
 ]
 ```
 
-5. Run the endpoint /flights/out/{airportId} for flights flying out from the airport
+5. Run the endpoint /flights/out/{airportId} with username and password in the AUTH headers if using Postman, enter credentials in the popup if using browser for flights flying out from the airport
 Ex. http://localhost:8080/flights/out/2290 should return the JSON response
 ```
 [
@@ -90,7 +90,7 @@ Ex. http://localhost:8080/flights/out/2290 should return the JSON response
 ]
 ```
 
-6. Run the endpoint /flights/route/{sourceAirportId}/{destinationAirportId} for flights flying between two airports
+6. Run the endpoint /flights/route/{sourceAirportId}/{destinationAirportId} with username and password in the AUTH headers if using Postman, enter credentials in the popup if using browser for flights flying between two airports
 Ex. http://localhost:8080/flights/route/3393/3361 should return the JSON response
 ```
 [
@@ -124,3 +124,11 @@ Ex. http://localhost:8080/flights/route/3393/3361 should return the JSON respons
     ...
 ]
 ```
+# Steps to read Swagger API documentation
+1. Run the endpoint http://localhost:8080/v2/api-docs
+2. Copy the JSON response and paste it on Swagger Editor webpage https://editor.swagger.io/
+OR
+1. Enable Swagger UI in the build.gradle. This exposes the Swagger API documentation on to the Swagger UI endpoint
+compile 'io.springfox:springfox-swagger-ui:2.9.2'
+2. Run the endpoint on the browser
+http://localhost:8080/swagger-ui.html#/
