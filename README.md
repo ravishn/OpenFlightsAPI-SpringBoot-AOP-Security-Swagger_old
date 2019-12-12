@@ -129,7 +129,9 @@ Ex. http://localhost:8080/flights/route/3393/3361 should return the JSON respons
 # Steps to read Swagger API documentation
 1. Run the endpoint http://localhost:8080/v2/api-docs
 2. Copy the JSON response and paste it on Swagger Editor webpage https://editor.swagger.io/
-OR
+
+-OR-
+
 1. Enable Swagger UI in the build.gradle. This exposes the Swagger API documentation on to the Swagger UI endpoint
 compile 'io.springfox:springfox-swagger-ui:2.9.2'
 2. Run the endpoint on the browser
