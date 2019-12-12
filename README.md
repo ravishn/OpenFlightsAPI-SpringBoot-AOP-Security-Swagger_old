@@ -11,6 +11,8 @@ https://openflights.org/data.html
     a. Flights flying into a specified airport
     b. Flights flyout out of a specified airport
     c. Flights between 2 specified airports
+5. Authenticate and authorise endpoints using Basic Authorisation(username/password)
+6. Document API using Swagger
 
 # OpenFlightsAPI-SpringBoot
 SpringBoot application integrated with OpenFlights data to get flights information from airports, airlines and routes
