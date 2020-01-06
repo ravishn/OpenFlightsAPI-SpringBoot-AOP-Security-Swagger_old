@@ -4,6 +4,11 @@ plugins {
 	id 'java'
 }
 
+bootJar {
+    baseName = 'gs-spring-boot-docker'
+    version =  '0.1.0'
+}
+
 group = 'com.foxtel.spring.demo'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
@@ -24,7 +29,7 @@ repositories {
 
 dependencies {
 
-	//Enable metrics logging
+	//Include metrics logging
 	compile 'org.springframework.boot:spring-boot-starter-actuator'
 
 	//Basic spring-boot libraries
@@ -42,9 +47,8 @@ dependencies {
 	compile 'io.springfox:springfox-swagger2:2.9.2'
 	compile 'io.springfox:springfox-swagger-ui:2.9.2'
 
-	//spring security with oauth2
-	// implementation 'org.springframework.security:spring-security-oauth2-client'
-	// implementation 'org.springframework.security:spring-security-oauth2-jose'
+	//Custom metrics using Prometheus
+	// implementation 'io.micrometer:micrometer-registry-prometheus'
 
 	//dev tool libraries
 	compileOnly 'org.projectlombok:lombok'
