@@ -23,6 +23,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
+@WithUserDetails("admin")
 public class FlightControllerTest {
 
     @Autowired
@@ -33,7 +34,6 @@ public class FlightControllerTest {
      * @throws Exception
      */
     @Test
-    @WithUserDetails("admin")
     public void getAllFlightsIn_EmptyResponse_Test() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/flights/in/airport/1"+ UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -41,7 +41,6 @@ public class FlightControllerTest {
     }
 
     @Test
-    @WithUserDetails("admin")
     public void getAllFlightsIn_Ok_Test() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/flights/in/airport/2290").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
@@ -52,7 +51,6 @@ public class FlightControllerTest {
      * @throws Exception
      */
     @Test
-    @WithUserDetails("admin")
     public void getAllFlightsOut_EmptyResponse_Test() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/flights/out/airport/1"+ UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -60,7 +58,6 @@ public class FlightControllerTest {
     }
 
     @Test
-    @WithUserDetails("admin")
     public void getAllFlightsOut_Ok_Test() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/flights/out/airport/2290").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
@@ -71,7 +68,6 @@ public class FlightControllerTest {
      * @throws Exception
      */
     @Test
-    @WithUserDetails("admin")
     public void getAllFlightBetweenAirports_EmptyResponse_Test() throws Exception {
 
         mvc.perform(MockMvcRequestBuilders.get("/flights/route/source/1/dest/1").accept(MediaType.APPLICATION_JSON))
@@ -80,14 +76,12 @@ public class FlightControllerTest {
     }
 
     @Test
-    @WithUserDetails("admin")
     public void getAllFlightBetweenAirports_Ok_Test() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/flights/route/source/3393/dest/3361").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
     
     @Test
-    @WithUserDetails("admin")
     public void getAllFlightsBetweenAirports_NotFound_Test() throws Exception {
     	
     	mvc.perform(MockMvcRequestBuilders.get("/flights/route/foo").accept(MediaType.APPLICATION_JSON))
