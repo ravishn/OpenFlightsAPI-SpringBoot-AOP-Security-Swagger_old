@@ -1,5 +1,11 @@
 package com.foxtel.spring.demo.test;
 
+import static org.hamcrest.Matchers.equalTo;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.UUID;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +17,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import java.util.UUID;
-
-import static org.hamcrest.Matchers.equalTo;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 /**
  * Unit-tests for Controller class
  */
@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class FlightControllerTest {
 
     @Autowired
-    private MockMvc mvc;
+    private MockMvc mockMvc;
 
     /**
      * Tests for flight in endpoint
@@ -35,14 +35,14 @@ public class FlightControllerTest {
      */
     @Test
     public void getAllFlightsIn_EmptyResponse_Test() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/flights/in/airport/1"+ UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(MockMvcRequestBuilders.get("/flights/in/airport/1"+ UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("[]")));
     }
 
     @Test
     public void getAllFlightsIn_Ok_Test() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/flights/in/airport/2290").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(MockMvcRequestBuilders.get("/flights/in/airport/2290").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
 
@@ -52,14 +52,15 @@ public class FlightControllerTest {
      */
     @Test
     public void getAllFlightsOut_EmptyResponse_Test() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/flights/out/airport/1"+ UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(MockMvcRequestBuilders.get("/flights/out/airport/1"+ UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("[]")));
     }
 
     @Test
     public void getAllFlightsOut_Ok_Test() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/flights/out/airport/2290").accept(MediaType.APPLICATION_JSON))
+
+            mockMvc.perform(MockMvcRequestBuilders.get("/flights/out/airport/2290").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
 
@@ -70,21 +71,21 @@ public class FlightControllerTest {
     @Test
     public void getAllFlightBetweenAirports_EmptyResponse_Test() throws Exception {
 
-        mvc.perform(MockMvcRequestBuilders.get("/flights/route/source/1/dest/1").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(MockMvcRequestBuilders.get("/flights/route/source/1/dest/1").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("[]")));
     }
 
     @Test
     public void getAllFlightBetweenAirports_Ok_Test() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/flights/route/source/3393/dest/3361").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(MockMvcRequestBuilders.get("/flights/route/source/3393/dest/3361").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
     
     @Test
     public void getAllFlightsBetweenAirports_NotFound_Test() throws Exception {
     	
-    	mvc.perform(MockMvcRequestBuilders.get("/flights/route/foo").accept(MediaType.APPLICATION_JSON))
+    	mockMvc.perform(MockMvcRequestBuilders.get("/flights/route/foo").accept(MediaType.APPLICATION_JSON))
     			.andExpect(status().isNotFound());
     }
 
