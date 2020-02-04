@@ -2,6 +2,9 @@ package com.foxtel.spring.demo.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -11,13 +14,31 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-public class SpringFoxConfig {
+public class SpringFoxConfig extends WebMvcConfigurationSupport {
+
     @Bean
     public Docket apiDocket() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
-                .build();
+                    .select()
+                    .apis(RequestHandlerSelectors.basePackage("com.foxtel.spring.demo"))
+                    .paths(PathSelectors.any())
+                    .build();
+    }
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+
+        registry.addRedirectViewController("/flights/api/docs", "/v2/api-docs").setKeepQueryParams(true);
+
+        registry.addRedirectViewController("/flights/api/docs/ui", "/swagger-ui.html").setKeepQueryParams(true);
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+        registry.addResourceHandler("/fligths/api/docs/**").addResourceLocations("classpath:/META-INF/resources/");
+
+        registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 }
