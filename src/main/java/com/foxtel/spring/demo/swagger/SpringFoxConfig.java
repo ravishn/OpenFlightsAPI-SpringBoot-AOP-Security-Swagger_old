@@ -29,7 +29,6 @@ public class SpringFoxConfig extends WebMvcConfigurationSupport {
     public void addViewControllers(ViewControllerRegistry registry) {
 
         registry.addRedirectViewController("/flights/api/docs", "/v2/api-docs").setKeepQueryParams(true);
-
         registry.addRedirectViewController("/flights/api/docs/ui", "/swagger-ui.html").setKeepQueryParams(true);
     }
 
@@ -37,7 +36,6 @@ public class SpringFoxConfig extends WebMvcConfigurationSupport {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
         registry.addResourceHandler("/fligths/api/docs/**").addResourceLocations("classpath:/META-INF/resources/");
-
         registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
         registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
