@@ -12,10 +12,18 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * SpringFox configuration class to expose API documentation via flights/api/docs endpoint
+ */
 @Configuration
 @EnableSwagger2
 public class SpringFoxConfig extends WebMvcConfigurationSupport {
 
+    /**
+     * A Docket builder method to parse the project for models and API's
+     * 
+     * @return Docket builder
+     */
     @Bean
     public Docket apiDocket() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -25,6 +33,9 @@ public class SpringFoxConfig extends WebMvcConfigurationSupport {
                     .build();
     }
 
+    /**
+     * redirect custom endpoints to Swagger default endpoints
+     */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
 
@@ -32,6 +43,9 @@ public class SpringFoxConfig extends WebMvcConfigurationSupport {
         registry.addRedirectViewController("/flights/api/docs/ui", "/swagger-ui.html").setKeepQueryParams(true);
     }
 
+    /**
+     * adding resource references to custom endpoints
+     */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
