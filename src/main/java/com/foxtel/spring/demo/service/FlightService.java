@@ -20,7 +20,13 @@ public class FlightService {
     FlightJdbcRepository flightJdbcRepository;
 
     // List of flights to be returned to the caller
-    List<Flight> flights;
+    List<Flight> flightsIn;
+
+    // List of flights to be returned to the caller
+    List<Flight> flightsOut;
+
+    // List of flights to be returned to the caller
+    List<Flight> flightsBetween;
 
     //Airport ID to be fetched from the request method
     String airportId;
@@ -36,7 +42,7 @@ public class FlightService {
     /**
      * method to fetch all the flights coming in to an airport
      * @param airportId
-     * @return flights
+     * @return flightsIn
      */
     public List<Flight> getAllFlightsIn(String airportId) {
 
@@ -44,15 +50,15 @@ public class FlightService {
     	
         this.airportId = airportId;
 
-        flights = flightJdbcRepository.findFlightsInByDestinationAirportId(airportId);
+        flightsIn = flightJdbcRepository.findFlightsInByDestinationAirportId(airportId);
 
-        return flights;
+        return flightsIn;
     }
 
     /**
      * method to fetch all the flights going out from an airport
      * @param airportId
-     * @return flights
+     * @return flightsOut
      */
     public List<Flight> getAllFlightsOut(String airportId) {
     	
@@ -60,16 +66,16 @@ public class FlightService {
 
         this.airportId = airportId;
 
-        flights = flightJdbcRepository.findFlightsOutBySurceAirportId(airportId);
+        flightsOut = flightJdbcRepository.findFlightsOutBySurceAirportId(airportId);
 
-        return flights;
+        return flightsOut;
     }
 
     /**
      * method to fetch all flights between two airports
      * @param sourceAirportId
      * @param destinationAirportId
-     * @return flights
+     * @return flightsBetween
      */
     public List<Flight> getAllFlightsBetweenAirportsByAirportId(String sourceAirportId, String destinationAirportId) {
 
@@ -78,9 +84,9 @@ public class FlightService {
         this.sourceAirportId = sourceAirportId;
         this.destinationAirportId = destinationAirportId;
 
-        flights = flightJdbcRepository.findFlightsBetweenAirports(sourceAirportId, destinationAirportId);
+        flightsBetween = flightJdbcRepository.findFlightsBetweenAirports(sourceAirportId, destinationAirportId);
 
-        return flights;
+        return flightsBetween;
     }
 
     /**
